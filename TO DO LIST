@@ -1,0 +1,97 @@
+
+        <!-- Created by Rocking Akhii -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <style>
+            
+            #messages{
+    position:absolute;
+    top:25%;
+    left:20%;
+    
+    }
+#textbox{
+   position:absolute; 
+   top:25%;
+   left:20%;
+   margin-bottom:;:50px;
+    border-radius:150px;
+    color:orange;
+    
+    
+    
+}
+    
+#button{
+  position:absolute ;
+  top:25%;  
+  border-color:green;
+  width:50px;
+  color:white;
+  background-color:green;
+    
+    
+    
+}
+            
+            
+        </style>
+    </head>
+    
+    <body>
+    <h1 align ="center"
+    style="color:blue;"><i>To do list<i/> </h1>
+        <ol id="messages"></ol>
+        <input id="textbox" type="text"value=""/>
+        <button id="button">+</button>
+        
+        
+      <script>
+          var messages= document.getElementById("messages");
+var textbox = document.getElementById("textbox");
+var button = document.getElementById("button");
+button.addEventListener("click",function(){
+    var newMessages = document.createElement("li");
+   newMessages.innerText = textbox.value;
+   
+    messages.appendChild(newMessages);
+    textbox.value="";
+    newMessages.addEventListener("click",function()
+    {
+        
+   newMessages.style.textDecoration = "line-through"     
+        
+        
+        
+    })
+    
+    
+    
+    
+    
+    
+    
+});
+var newMessages = document.createElement("li")
+newMessages.addEventListener("click",function()
+{
+
+ newMessages.style.textDecoration = "line-through"   
+    
+    
+    
+})
+
+      </script>  
+        
+    </body>
+</html>
+        
+        
+        
+        
+    </body>
+</html>
